@@ -3,7 +3,7 @@ import google.generativeai as genai
 from PIL import Image
 
 # 🔴 your API key
-genai.configure(api_key="AIzaSyB0yqBc0W9V7CtQ6p7LCDNY-pfCgSO8xds")
+genai.configure(api_key="AIzaSyB0yqBc0W9V7CtQ6p7LCDNY-XXXXXXXXXXX")
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
@@ -62,3 +62,4 @@ if st.button("🚀 Generate Artifact Description") and file:
         result = get_gemini_response(text, image_part)
 
     st.markdown(result, unsafe_allow_html=True)
+
